@@ -6,40 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan Gozun - Portfolio</title>
+
     <style>
         body, html {
-            height: 100%;
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            max-width: 800px; /* or any value you deem fit */
+            max-width: 800px;
             margin: 0 auto;
         }
 
         header {
             background-color: #f4f4f4;
-            padding: 10px 0;
-            width: 100%;
+            padding: 15px 0;
             text-align: center;
+            width: 100%;
         }
 
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #333;
+            font-weight: bold;
         }
 
         section {
-            margin: 20px 0;
+            margin: 40px 0;
             text-align: center;
+            padding: 0 20px;
         }
 
         img.profile-pic {
@@ -47,13 +45,33 @@
             height: auto;
             margin: 20px auto;
             display: block;
+            border-radius: 8px;
         }
-        
+
+        /* Remove bullets from project list */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
     </style>
 </head>
 
 <body>
+
     <div class="container">
+
         <header>
             <h1>Dylan Gozun</h1>
             <nav>
@@ -63,33 +81,41 @@
             </nav>
         </header>
 
-        <section>
+        <section id="about">
             <h2>About Me</h2>
-            <img src="profile_picture.png" alt="Your Name's Profile Picture" class="profile-pic">
+            <img src="profile_picture.png" alt="Dylan Gozun Profile Picture" class="profile-pic">
+
             <p>
-                I am aspiring Full stack Web Developer currently Enjoying learning at Learn Computer Today. :)
+                I am an aspiring full-stack web developer currently enjoying learning at Learn Computer Today. 😊
             </p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <ul>
-                <li><a href="https://github.com/lan03gozun-crypto/githubproject">Project 1</a>:i Have made a simple GitHub Project.</li>
-                <li><a href="#">Project 2</a>:other test.</li>
+                <li>
+                    <a href="https://github.com/lan03gozun-crypto/githubproject" target="_blank">
+                        Project 1
+                    </a>: A simple GitHub project I created.
+                </li>
+
+                <li>
+                    <a href="#" target="_blank">Project 2</a>: Another test project.
+                </li>
             </ul>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>
-               REACHS ME OUT @ LAN03GOZUN@GMAIL.COM
-            </p>
+            <p>Reach me at: <strong>lan03gozun@gmail.com</strong></p>
         </section>
 
         <footer>
             <p>© 2025 by Dylan Gozun</p>
         </footer>
+
     </div>
+
 </body>
 
 </html>
